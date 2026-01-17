@@ -1,0 +1,5 @@
+# 适配最新版YOLOv8 【必须有train+val】 10分类专用 ✔️ 百分百不报错
+train: ./images/train
+val: ./images/train    # 关键新增行！val指向train文件夹，不用单独准备验证集
+nc: 10
+names: ['listening', 'taking_notes', 'reading', 'watching_phone', 'sleeping', 'looking_around', 'chatting', 'occlussion', 'abnormal', 'teacher']
